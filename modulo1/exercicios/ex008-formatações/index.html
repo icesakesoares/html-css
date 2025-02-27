@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (não semantica).</p>
+    <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semantica).</p>
+    <h2>Itálico</h2>
+    <p>Nesta frase temos um <i>termo em itático</i> usando a tag &lt;i&gt; (não semantica).</p>
+    <p>Nesta frase temos um <em>termo em enfase</em> usando a tag &lt;em&gt; (semantica).</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos também criar um <mark style="background-color: lime;">texto marcado</mark> usando a tag &lt;mark&gt; e com estilo CSS dentro da tag.</p>
+    <p>E no outro parágrafo temos <mark>outro texto marcado</mark> sem o estilo CSS.</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small></p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido mais não considerado usando a tag &lt;del&gt;.</p>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado ao texto depois usando a tag &lt;ins&gt;.</p>
+    <p>Existe também o <u>sublinhado</u> com a tag &lt;u&gt; (não semantica).</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3 usando a tag &lt;sup&gt;.</p>
+    <h2>Texto subescrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O usando a tag &lt;sub&gt;.</p>
+
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatações</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <p>O trecho do código acima foi formatado com a tag &lt;code&gt;.</p><br>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é IMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+    <p>O código python acima foi formatado com as tags &lt;pre&gt; e &lt;code&gt;.</p>
+
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
+    <p>As aspas no texto citado foram criadas pela tag &lt;q&gt;, dando semantica a uma citação.</p>
+
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote>
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descreve os blocos do teste.
+    </blockquote>
+    <p>A citação formatada com a tag &lt;blockquote&gt;, desloca o texto para dentro dando um destaque semantico e voce pode colocar dentro da tag a tag &lt;cite&gt; e cole o link do autor para não ter problemas com direitos autorais.</p>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HiperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <p>Nas abreviações foi usado a tag &lt;abbr&gt;, para quando passar o mouse por cima mostrar o significado.</p>
+    <p>Também é possivel colocar palavras ao <bdo dir="rtl">contrário</bdo> usando a tag &lt;bdo:r&gt;.</p>
+</body>
+</html>

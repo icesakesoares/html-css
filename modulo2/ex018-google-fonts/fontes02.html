@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'Million';
+            src: url('fonts/Million Smiles.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            padding: 0px;
+            /*
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advance Typography)
+                - sgv
+            
+            */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: 'Million', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum omnis odio sunt excepturi reiciendis? Libero iure laboriosam dicta nisi id reprehenderit fuga quod maiores ea officia ex assumenda, odio quisquam.</p>
+</body>
+</html>
